@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="new.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- code the header: -->
+        <a name="Home">
+        <header class="header">
+            <div class="div_header">
+               <div class="div_img_logo">
+                   <img src="logo1.jpg" class="img_logo">
+               </div>
+               <div class="div_icon">
+                   <i class="fa-sharp fa-solid fa-bars" class="a_tags" id="menu-icon" style="margin-left: 3em; font-size:1em;"></i>
+                   <a href="#" class="a_tags" ><i class="fa-solid fa-magnifying-glass" style="margin-left: 10em;"></i></a>
+                   <a href="#" class="a_tags"><i class="fa-solid fa-heart" style="margin-left: 0.5em;"></i></a>
+               </div>
+            </div>
+            <div class="sidebar" id="sidebar">
+            <ul>
+                <li class="li_header"><a href="#Home">Home</a></li>
+                <li class="li_header"><a href="#About-Us">About</a></li>
+                <li class="li_header"><a href="#featured-books">Featured</a></li>
+                <li class="li_header"><a href="#new-arrivals">Arrivals</a></li>
+                <li class="li_header"><a href="#review">Reviews</a></li>
+                <li class="li_header"><a href="#our-Blog">Blog</a></li>
+            </ul>
+            </div>
+        <div class="cover" id="cover"></div>
+        </header>
+        </a>
+    <!-- end -->
+    
+    <!-- cooding the list by javascript -->
+        <script>
+        const menuIcon = document.getElementById("menu-icon");
+        const sidebar = document.getElementById("sidebar");
+        const cover = document.getElementById("cover");
+
+        menuIcon.addEventListener("click", () => {
+            sidebar.classList.add("active");
+            cover.classList.add("active");
+        });
+        cover.addEventListener("click", () => {
+            sidebar.classList.remove("active");
+            cover.classList.remove("active");
+        });
+        </script>
+    <!-- end -->
+        
+    <!-- cooding  welcome to... -->
+    <div class="img_bg">
+        <img src="bg.png" width="100%">
+    </div>
+    <div class="h1_welcome_to">
+        <h1>WELCOME TO</h1>
+    </div>
+    <div class="h2_book_store">
+        <h2>BOOK STORE</h2>
+    </div>
+    <div class="p_under_book_store">
+        <p>Lorem  ipsum  dolo  sit  amet  consectetur  adipisicing  elit.  Assumenda  molestias  atque<br>laborum  non fuga  ex  deserunt.  Exercitationem  velit  ducimus  praesentium,  obcaecati  hic<br>voluptate id tenetur fuga illum quidem omnis? Rerum?</p>
+    </div>
+    <div class="div_button_learn_more">
+        <button class="button_learn_more">
+            Learn More
+        </button>
+    </div>
+    <div class="div_img_table">
+        <img src="table.png" class="img_table">
+    </div>
+    <!-- end -->
+
+    <!-- cooding feature-buttons -->
+    <div class="div_feature-buttons">
+        <button class="feature-button">
+            <i class="fa-solid fa-truck-fast"></i><br>
+            <span>Fast Delivery</span>
+            <p>Lorem ipsum dolor, sit amet consectetur<br>adipisicing elit.</p>
+        </button>
+        <button class="feature-button">
+            <i class="fas fa-headset"></i><br>
+            <span>24 x 7 Services</span>
+            <p>Lorem ipsum dolor, sit amet consectetur<br>adipisicing elit.</p>
+        </button>
+        <button class="feature-button">
+            <i class="fas fa-tag"></i><br>
+            <span>Best Deal</span>
+            <p>Lorem ipsum dolor, sit amet consectetur<br>adipisicing elit.</p> 
+        </button> 
+        <button class="feature-button">
+            <i class="fas fa-lock"></i><br>
+            <span>Secure Payment</span>
+            <p>Lorem ipsum dolor, sit amet consectetur<br>adipisicing elit.</p> 
+        </button> 
+      </div>
+      <!-- end -->
+
+      <!-- cooding about us -->
+    <a name="About-Us">   
+        <div>
+            <h1 class="h1_About_us">About Us</h1>  
+            <p class="p_under_About_us">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae cumque atque dolor<br> corporis architecto. Voluptate expedita molestias maxime officia natus consectetur dolor<br> quisquam illo? Quis illum nostrum prespiciatis laboriosam perferenis Lorem ipsum dolor <br>sit amet consectetur adipisicing elit. Minus ad eius saepe architecto aperiam laboriosam <br>Voluptas nobis Voluptates id amet eos repellat corrupti harum consectetur, dolorum dolore<br> balnditiis quam quo.</p>
+            <button class="button_Learn_more">Learn More</button>
+        <div class="img_about">
+            <img src="about.jpg">
+        </div>
+        </div>
+    </a>
+    <!-- end -->
+     
+    <!-- coodind featured -->
+    <a name="featured-books"> 
+        <h1 class="h1_Featured_books">Featured Books</h1>
+    </a> 
+        <div class="custom-scrollbar">
+            <div class="div_Featured_books">
+                <img src="book_1.jpg" class="img_book_1">
+                <h1 class="h1_for_featured_books">Featured Books</h1>
+                <p class="p_for_featured_books">John Deo</p>
+                <p class="p_for_featured_books" style="color: #089a9a;">Thriller,Horror,Romance</p>
+                <p class="p_for_featured_books" style="color: black;font-size:15sp; font-weight: bold;">$25.50</p>
+                <p style="text-decoration: line-through; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin-left:110px; margin-top: -29px;">$28.60</p>
+                 <button class="btn_learn_more">Learn More</button>
+            </div>
+            <div class="div_Featured_books">
+                <img src="book_2.jpg" class="img_book_1">
+                <h1 class="h1_for_featured_books">Featured Books</h1>
+                <p class="p_for_featured_books">John Deo</p>
+                <p class="p_for_featured_books" style="color:#089a9a;">Thriller,Horror,Romance</p>
+                <p class="p_for_featured_books" style="color: black;font-size:15sp; font-weight: bold;">$25.50</p>
+                <p style="text-decoration: line-through; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin-left:110px; margin-top: -29px;">$28.60</p>
+                 <button class="btn_learn_more">Learn More</button>
+            </div>
+            <div class="div_Featured_books">
+                <img src="book_3.jpg" class="img_book_1">
+                <h1 class="h1_for_featured_books">Featured Books</h1>
+                <p class="p_for_featured_books">John Deo</p>
+                <p class="p_for_featured_books" style="color:#089a9a;">Thriller,Horror,Romance</p>
+                <p class="p_for_featured_books" style="color: black;font-size:15sp; font-weight: bold;">$25.50</p>
+                <p style="text-decoration: line-through; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin-left:110px; margin-top: -29px;">$28.60</p>
+                 <button class="btn_learn_more">Learn More</button>
+            </div>
+            <div class="div_Featured_books">
+                <img src="book_4.jpg" class="img_book_1">
+                <h1 class="h1_for_featured_books">Featured Books</h1>
+                <p class="p_for_featured_books">John Deo</p>
+                <p class="p_for_featured_books" style="color:#089a9a;">Thriller,Horror,Romance</p>
+                <p class="p_for_featured_books" style="color: black;font-size:15sp; font-weight: bold;">$25.50</p>
+                <p style="text-decoration: line-through; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin-left:110px; margin-top: -29px;">$28.60</p>
+                 <button class="btn_learn_more">Learn More</button>
+            </div>
+            <div class="div_Featured_books">
+                <img src="book_5.jpg" class="img_book_1">
+                <h1 class="h1_for_featured_books">Featured Books</h1>
+                <p class="p_for_featured_books">John Deo</p>
+                <p class="p_for_featured_books" style="color:#089a9a;">Thriller,Horror,Romance</p>
+                <p class="p_for_featured_books" style="color: black;font-size:15sp; font-weight: bold;">$25.50</p>
+                <p style="text-decoration: line-through; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin-left:110px; margin-top: -29px;">$28.60</p>
+                 <button class="btn_learn_more">Learn More</button>
+            </div>
+            <div class="div_Featured_books">
+                <img src="book_6.jpg" class="img_book_1">
+                <h1 class="h1_for_featured_books">Featured Books</h1>
+                <p class="p_for_featured_books">John Deo</p>
+                <p class="p_for_featured_books" style="color:#089a9a;">Thriller,Horror,Romance</p>
+                <p class="p_for_featured_books" style="color: black;font-size:15sp; font-weight: bold;">$25.50</p>
+                <p style="text-decoration: line-through; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin-left:110px; margin-top: -29px;">$28.60</p>
+                 <button class="btn_learn_more">Learn More</button>
+            </div>
+            <div class="div_Featured_books">
+                <img src="book_7.jpg" class="img_book_1">
+                <h1 class="h1_for_featured_books">Featured Books</h1>
+                <p class="p_for_featured_books">John Deo</p>
+                <p class="p_for_featured_books" style="color:#089a9a;">Thriller,Horror,Romance</p>
+                <p class="p_for_featured_books" style="color: black;font-size:15sp; font-weight: bold;">$25.50</p>
+                <p style="text-decoration: line-through; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin-left:110px; margin-top: -29px;">$28.60</p>
+                 <button class="btn_learn_more">Learn More</button>
+            </div>
+            <div class="div_Featured_books">
+                <img src="book_8.jpg" class="img_book_1">
+                <h1 class="h1_for_featured_books">Featured Books</h1>
+                <p class="p_for_featured_books">John Deo</p>
+                <p class="p_for_featured_books" style="color:#089a9a;">Thriller,Horror,Romance</p>
+                <p class="p_for_featured_books" style="color: black;font-size:15sp; font-weight: bold;">$25.50</p>
+                <p style="text-decoration: line-through; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin-left:110px; margin-top: -29px;">$28.60</p>
+                 <button class="btn_learn_more">Learn More</button>
+            </div>
+            <div class="div_Featured_books">
+                <img src="book_9.jpg" class="img_book_1">
+                <h1 class="h1_for_featured_books">Featured Books</h1>
+                <p class="p_for_featured_books">John Deo</p>
+                <p class="p_for_featured_books" style="color:#089a9a;">Thriller,Horror,Romance</p>
+                <p class="p_for_featured_books" style="color: black;font-size:15sp; font-weight: bold;">$25.50</p>
+                <p style="text-decoration: line-through; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin-left:110px; margin-top: -29px;">$28.60</p>
+                 <button class="btn_learn_more">Learn More</button>
+            </div>
+            <div class="div_Featured_books">
+                <img src="book_10.jpg" class="img_book_1">
+                <h1 class="h1_for_featured_books">Featured Books</h1>
+                <p class="p_for_featured_books">John Deo</p>
+                <p class="p_for_featured_books" style="color:#089a9a;">Thriller,Horror,Romance</p>
+                <p class="p_for_featured_books" style="color: black;font-size:15sp; font-weight: bold;">$25.50</p>
+                <p style="text-decoration: line-through; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin-left:110px; margin-top: -29px;">$28.60</p>
+                 <button class="btn_learn_more">Learn More</button>
+            </div>
+            <div class="div_Featured_books">
+                <img src="book_11.jpg" class="img_book_1">
+                <h1 class="h1_for_featured_books">Featured Books</h1>
+                <p class="p_for_featured_books">John Deo</p>
+                <p class="p_for_featured_books" style="color:#089a9a;">Thriller,Horror,Romance</p>
+                <p class="p_for_featured_books" style="color: black;font-size:15sp; font-weight: bold;">$25.50</p>
+                <p style="text-decoration: line-through; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin-left:110px; margin-top: -29px;">$28.60</p>
+                 <button class="btn_learn_more">Learn More</button>
+            </div>
+            <div class="div_Featured_books">
+                <img src="book_12.jpg" class="img_book_1">
+                <h1 class="h1_for_featured_books">Featured Books</h1>
+                <p class="p_for_featured_books">John Deo</p>
+                <p class="p_for_featured_books" style="color: rgb(5, 213, 213);">Thriller,Horror,Romance</p>
+                <p class="p_for_featured_books" style="color: black;font-size:15sp; font-weight: bold;">$25.50</p>
+                <p style="text-decoration: line-through; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin-left:110px; margin-top: -29px;">$28.60</p>
+                 <button class="btn_learn_more">Learn More</button>
+            </div>
+            <div class="div_Featured_books">
+                <img src="book_13.jpg" class="img_book_1">
+                <h1 class="h1_for_featured_books">Featured Books</h1>
+                <p class="p_for_featured_books">John Deo</p>
+                <p class="p_for_featured_books" style="color:#089a9a;">Thriller,Horror,Romance</p>
+                <p class="p_for_featured_books" style="color: black;font-size:15sp; font-weight: bold;">$25.50</p>
+                <p style="text-decoration: line-through; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin-left:110px; margin-top: -29px;">$28.60</p>
+                 <button class="btn_learn_more">Learn More</button>
+            </div>
+            <div class="div_Featured_books">
+                <img src="book_14.jpg" class="img_book_1">
+                <h1 class="h1_for_featured_books">Featured Books</h1>
+                <p class="p_for_featured_books">John Deo</p>
+                <p class="p_for_featured_books" style="color:#089a9a;">Thriller,Horror,Romance</p>
+                <p class="p_for_featured_books" style="color: black;font-size:15px;;  font-weight: bold;">$25.50</p>
+                <p style="text-decoration: line-through; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin-left:110px; margin-top: -29px;">$28.60</p>
+                 <button class="btn_learn_more">Learn More</button>
+            </div>
+            <div class="div_Featured_books">
+                <img src="book_15.jpg" class="img_book_1">
+                <h1 class="h1_for_featured_books">Featured Books</h1>
+                <p class="p_for_featured_books">John Deo</p>
+                <p class="p_for_featured_books" style="color:#089a9a;">Thriller,Horror,Romance</p>
+                <p class="p_for_featured_books" style="color: black;font-size: 15sp; font-weight: bold;">$25.50</p>
+                <p style="text-decoration: line-through; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin-left:110px; margin-top: -29px;">$28.60</p>
+                 <button class="btn_learn_more">Learn More</button>
+            </div>
+          </div>
+       <!-- end -->
+
+       <!-- cooding Arrival -->
+       <a name="new-arrivals">
+        <h4 class="h4_new_arrivals">New Arrivals</h4>
+        </a>  
+        <div class="arrivals-container-line1">
+            <div class="New-Arrivals">
+                <img src="arrival_1.jpg" class="img_arrival">
+                <p class="p_for_new_arrivals">New Arrivals</p>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star-half-stroke"></i>
+                </div>
+                <button class="learn-more">Learn More</button>
+            </div>
+            <div class="New-Arrivals">
+                <img src="arrival_2.jpg" class="img_arrival">
+                <p class="p_for_new_arrivals">New Arrivals</p>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star-half-stroke"></i>
+                </div>
+                <button class="learn-more">Learn More</button>
+            </div>
+            <div class="New-Arrivals">
+                <img src="arrival_3.jpg" class="img_arrival">
+                <p class="p_for_new_arrivals">New Arrivals</p>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star-half-stroke"></i>
+                </div>
+                <button class="learn-more">Learn More</button>
+            </div>
+            <div class="New-Arrivals">
+                <img src="arrival_4.jpg" class="img_arrival">
+                <p class="p_for_new_arrivals">New Arrivals</p>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star-half-stroke"></i>
+                </div>
+                <button class="learn-more">Learn More</button>
+            </div>
+            <div class="New-Arrivals">
+                <img src="arrival_5.jpg" class="img_arrival">
+                <p class="p_for_new_arrivals">New Arrivals</p>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star-half-stroke"></i>
+                </div>
+                <button class="learn-more">Learn More</button>
+            </div>
+        </div>
+        <div class="arrivals-container-line2">
+            <div class="New-Arrivals">
+                <img src="arrival_6.jpg" class="img_arrival">
+                <p class="p_for_new_arrivals">New Arrivals</p>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star-half-stroke"></i>
+                </div>
+                <button class="learn-more">Learn More</button>
+            </div>
+            <div class="New-Arrivals">
+                <img src="arrival_7.jpg" class="img_arrival">
+                <p class="p_for_new_arrivals">New Arrivals</p>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star-half-stroke"></i>
+                </div>
+                <button class="learn-more">Learn More</button>
+            </div>
+            <div class="New-Arrivals">
+                <img src="arrival_8.jpg" class="img_arrival">
+                <p class="p_for_new_arrivals">New Arrivals</p>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star-half-stroke"></i>
+                </div>
+                <button class="learn-more">Learn More</button>
+            </div>
+            <div class="New-Arrivals">
+                <img src="arrival_9.jpg" class="img_arrival">
+                <p class="p_for_new_arrivals">New Arrivals</p>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star-half-stroke"></i>
+                </div>
+                <button class="learn-more">Learn More</button>
+            </div>
+            <div class="New-Arrivals">
+                <img src="arrival_10.jpg" class="img_arrival">
+                <p class="p_for_new_arrivals">New Arrivals</p>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star-half-stroke"></i>
+                </div>
+                <button class="learn-more">Learn More</button>
+            </div>
+        </div>
+        <!-- end -->
+        
+        <!-- cooding reviews -->
+        <a name="review">
+            <h1 class="h1_Reviews">Reviews</h1>
+                 </a>
+                <div class="div_outer">
+                    <a href="#" class="a_tags">
+                    <div class="button_review">
+                        <img src="review_1.jpg" class="img_review">
+                        <i class="fa-solid fa-quote-left fa-flip-both fa-xs" style="color:#e4e2e2; font-size:90px; margin-left:150px;"></i>
+                        <h1 class="h1_John_Deo">John Deo</h1>
+                        <p class="p_under_john_deo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus eos doloribus iure distinctio Eos dolorem quam, nisi amet saepe totam, quas quidem laboriosam dolore, tenetur itaque nostrum Voluptas exceptri aut.</p> 
+                        <div class="rating">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star-half-stroke"></i>
+                       </div>
+                    </div>
+        </a>
+                <a href="#" class="a_tags">
+                    <div class="button_review">
+                        <img src="review_2.jpg" class="img_review">
+                        <i class="fa-solid fa-quote-left fa-flip-both fa-xs"style="color:#e4e2e2; font-size:90px; margin-left:150px;"></i>
+                        <h1 class="h1_John_Deo">John Deo</h1>
+                        <p class="p_under_john_deo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus eos doloribus iure distinctio Eos dolorem quam, nisi amet saepe totam, quas quidem laboriosam dolore, tenetur itaque nostrum Voluptas exceptri aut.</p> 
+                        <div class="rating">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star-half-stroke"></i>
+                       </div>
+                    </div>
+                </a>
+                <a href="#" class="a_tags">
+                    <div class="button_review">
+                        <img src="review_3.jpg" class="img_review">
+                        <i class="fa-solid fa-quote-left fa-flip-both fa-xs"style="color:#e4e2e2; font-size:90px; margin-left:150px;"></i>
+                        <h1 class="h1_John_Deo">John Deo</h1>
+                        <p class="p_under_john_deo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus eos doloribus iure distinctio Eos dolorem quam, nisi amet saepe totam, quas quidem laboriosam dolore, tenetur itaque nostrum Voluptas exceptri aut.</p> 
+                        <div class="rating">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star-half-stroke"></i>
+                       </div>
+                    </div>
+                </a>
+                <a href="#" class="a_tags">
+                    <div class="button_review">
+                        <img src="review_4.jpg" class="img_review">
+                        <i class="fa-solid fa-quote-left fa-flip-both fa-xs" style="color:#e4e2e2; font-size:90px; margin-left:150px;"></i>
+                        <h1 class="h1_John_Deo">John Deo</h1>
+                        <p class="p_under_john_deo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus eos doloribus iure distinctio Eos dolorem quam, nisi amet saepe totam, quas quidem laboriosam dolore, tenetur itaque nostrum Voluptas exceptri aut.</p> 
+                        <div class="rating">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star-half-stroke"></i>
+                       </div>
+                    </div>
+                </a>
+                </div>
+
+            <!-- end -->
+
+            <!-- cooding img banner -->
+            <div>
+                <img src="banner.jpg" class="img_banner" >
+                <button type="submit" class="b_learn_more">Learn More</button>
+            </div>
+            <!-- end -->
+
+            <!-- cooding blog -->
+            <a name="our-Blog">
+                <h5 class="h5_our_blog">Our Blog</h5>
+                </a>
+                <div class="ourBlog">
+                    <a href="#" class="a_tags">
+                <div class="our-blog1">
+                    <div class="img-blog">
+                        <img src="blog_1.jpg" class="blog-image">
+                    </div>
+                    <div class="text-blog">
+                        <h6 style="font-size: 1.5625em; color: #07898e; font-weight: bold; margin-top: -5px; font-family: Arial, Helvetica, sans-serif;">Bloger</h6>
+                        <p  style="font-size: 1.1875em; margin-top: -2.5em; line-height: 1.1em; word-spacing: 0.625em; font-family: Arial, Helvetica, sans-serif;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, quos quis quasi ut impedit reiciendis voluptatem rem esse ratione omnis, laudantium earum. Aperiam nesciunt dolore aliquam repellat consequatur amet ducimus.</p>
+                    </div>
+                    <div class="icon-blog">
+                        <i class="fa-solid fa-calendar-days"></i><i class="fa-solid fa-heart"></i>
+                    </div>
+                </div>
+            </a>
+                <a href="#" class="a_tags">
+                <div class="our-blog1">
+                    <div class="img-blog">
+                        <img src="blog_2.jpg" class="blog-image">
+                    </div>
+                    <div class="text-blog">
+                        <h6 style="font-size: 1.5625em; color: #07898e; font-weight: bold; margin-top: -5px; font-family: Arial, Helvetica, sans-serif;">Bloger</h6>
+                        <p  style="font-size: 1.1875em; margin-top: -2.5em; line-height: 1.1; word-spacing: 0.625em; font-family: Arial, Helvetica, sans-serif;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, quos quis quasi ut impedit reiciendis voluptatem rem esse ratione omnis, laudantium earum. Aperiam nesciunt dolore aliquam repellat consequatur amet ducimus.</p>
+                    </div>
+                    <div class="icon-blog">
+                        <i class="fa-solid fa-calendar-days"></i><i class="fa-solid fa-heart"></i>
+                    </div>
+                </div>
+                </a>
+                <a href="#" class="a_tags">
+                <div class="our-blog1">
+                    <div class="img-blog">
+                        <img src="blog_3.jpg" class="blog-image">
+                    </div>
+                    <div class="text-blog">
+                        <h6 style="font-size: 1.5625em; color: #07898e; font-weight: bold; margin-top: -5px; font-family: Arial, Helvetica, sans-serif;">Bloger</h6>
+                        <p  style="font-size: 1.1875em; margin-top: -2.5em; line-height: 1.1em; word-spacing: 0.625em; font-family: Arial, Helvetica, sans-serif;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, quos quis quasi ut impedit reiciendis voluptatem rem esse ratione omnis, laudantium earum. Aperiam nesciunt dolore aliquam repellat consequatur amet ducimus.</p>
+                    </div>
+                    <div class="icon-blog">
+                        <i class="fa-solid fa-calendar-days"></i><i class="fa-solid fa-heart"></i>
+                    </div>
+                </div>
+                </a>
+                </div>
+            <!-- end -->
+             <!-- cooding end -->
+    <div class="conclution">
+        <img src="logo.jpg" class="img_logo">
+        <p class="p_under_logo">Lorem,   ipsum dolor sit amet <br>consectetur adipisicing elit Est<br> quaerat ipsa aspernatur ad sequi,<br> dolore eveniet vatae quasi.<br> Excepturi ipsa odio impedit sequi <br>at hic velit, minus vero sint<br> Voluptas?</p>
+        <h1 class="h1_quick_link">Quick Link</h1>
+        <ul>
+            <li class="li_under"><a href="#Home" class="a_tags">Home</a></li>
+            <li class="li_under"><a href="#About-Us" class="a_tags">About</a></li>
+            <li class="li_under"><a href="#featured-books" class="a_tags">Featured</a></li>
+            <li class="li_under"><a href="#new-arrivals" class="a_tags">Arrivals</a></li>
+            <li class="li_under"><a href="#review" class="a_tags">Reviews</a></li>
+            <li class="li_under"><a href="#our-Blog" class="a_tags">Blog</a></li>
+        </ul>
+         <h1 class="h1_contant_info">Contant Info</h1> 
+        <a href="#" class="a_tags"><i class="fa-solid fa-phone" style="margin-left:51.5em; padding-top:10px; font-size:13px;"></i></a>
+        <a href="#" class="a_tags"><p class="p_numbers">+94 12 345 6789</p></a>
+        <a href="#" class="a_tags"><i class="fa-solid fa-phone" style="margin-left:51.5em; padding-top:10px; font-size:13px; padding-top:1px;"></i></a>
+        <a href="#" class="a_tags"><p class="p_numbers">+94 32 44 699</p> </a>
+        <a href="#" class="a_tags"><i class="fa-solid fa-envelope" style="margin-left:42em;"></i></a>
+        <a href="#" class="a_tags"><p class="p_email">bookstore123@gmail.com</p></a>
+        <h1 class="h1_follow_us">Follow Us</h1>
+        <div class="social-icons"> 
+            <a href="https://www.facebook.com/yourpage" class="a_tags"><i class="fa-brands fa-facebook-f"></i></a> 
+            <a href="https://www.instagram.com/yourprofile" class="a_tags"><i class="fa-brands fa-instagram"></i></a> 
+            <a href="https://www.twitter.com/yourprofile" class="a_tags"><i class="fa-brands fa-twitter"></i></a> 
+            <a href="https://www.linkedin.com/in/yourprofile" class="a_tags"><i class="fa-brands fa-linkedin-in"></i></a>  
+        </div>
+        <h1 class="h1_news_letter">NewsLetter</h1>
+        <form>
+            <input type="email" placeholder="You email id here" style=" width: 200px; height:30px; border: none;border-radius :20px;; border-color: rgb(196, 196, 196); background-color: #d3d3d3; ; margin-left: 98em;  box-sizing: border-box; font-size: 13px;">
+        </form>
+        <button type="submit"  style=" background-color: #0097a7; color: white; border: none;border-radius: 25px;font-size: 14px;padding: 7px 25px;; cursor: pointer; margin-top:5px;margin-left:91em; ">Subscribe </button>
+       <p class="p_design_by">Design By  <i class="fa-solid fa-face-grin" style="color: #0097a7 ;"></i></p>
+       <p style="color: #0097a7;margin-left: 61em; margin-top: -2.2em; font-family: Arial, Helvetica, sans-serif; font-size: 12px;">WT Master Code</p>
+    </div>
+</body>
+</html>
